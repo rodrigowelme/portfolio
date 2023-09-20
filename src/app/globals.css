@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+@apply h-screen overflow-auto flex flex-col;
+}
+
+::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#641AE6] rounded-3xl;
+}
